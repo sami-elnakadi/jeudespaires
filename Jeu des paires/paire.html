@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Jeu des paires</title>
+    <link href="assets/css/paire.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<header>
+    
+</header>
+<body>
+    <div class='tete'>
+        <h1>Jeu des paires !</h1>
+        <h3>Trouves l'ensemble des paires du jeu. Attention, tu es chronométré!</h3>
+        <h3>Score:<span id="score">0</span></h3>
+        <p id='countdown' class='timer'></p>
+    </div>  
+    <section>
+            <form class="jeu"> 
+                <input class="bouton" type="button" value="NOUVELLE PARTIE" onclick="rejoue()" />
+            </form>
+    <div class='fond'>      
+            <div class="jeu">
+                <img src="assets/img/carte.jpg" alt="1er carte" height="130" width="86" id="carte0" class="img"/>
+                <img src="assets/img/carte.jpg" alt="2er carte" height="130" width="86" id="carte1" class="img"/>
+                <img src="assets/img/carte.jpg" alt="3er carte" height="130" width="86" id="carte2" class="img"/>
+                <img src="assets/img/carte.jpg" alt="4er carte" height="130" width="86" id="carte3" class="img"/>
+            </div>
+            <div class="jeu">
+                <img src="assets/img/carte.jpg" alt="5er carte" height="130" width="86" id="carte4" class="img"/>
+                <img src="assets/img/carte.jpg" alt="6er carte" height="130" width="86" id="carte5" class="img"/>
+                <img src="assets/img/carte.jpg" alt="7er carte" height="130" width="86" id="carte6" class="img"/>
+                <img src="assets/img/carte.jpg" alt="8er carte" height="130" width="86" id="carte7" class="img"/>
+            </div>
+            <div class="jeu">
+                <img src="assets/img/carte.jpg" alt="9er carte" height="130" width="86" id="carte8" class="img"/>
+                <img src="assets/img/carte.jpg" alt="10er carte" height="130" width="86" id="carte9" class="img"/>
+                <img src="assets/img/carte.jpg" alt="11er carte" height="130" width="86" id="carte10" class="img"/>
+                <img src="assets/img/carte.jpg" alt="12er carte" height="130" width="86" id="carte11" class="img"/>
+            </div>  
+            <div class="jeu">
+                <img src="assets/img/carte.jpg" alt="12er carte" height="130" width="86" id="carte12" class="img"/>
+                <img src="assets/img/carte.jpg" alt="14er carte" height="130" width="86" id="carte13" class="img"/>
+                <img src="assets/img/carte.jpg" alt="15er carte" height="130" width="86" id="carte14"class="img"/>
+                <img src="assets/img/carte.jpg" alt="16er carte" height="130" width="86" id="carte15" class="img"/>
+            </div>  
+    </div>                   
+    </section>          
+    <script src="assets/js/paire.js"></script>
+</body>
+</html>
