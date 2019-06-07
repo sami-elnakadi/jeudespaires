@@ -1,17 +1,17 @@
 //Créer le tableau random
     // liste de 16 images = 2x8
-var tab =[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
+let tab =[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
     .map(p=> [p,Math.random()])
     .sort( (a,b)=> a[1]-b[1])
     .map(p=> p[0])
 
-var pics = document.getElementsByTagName('img');
-var checkScore = document.getElementById('score');
-var checkTime = document.getElementById('time');
-var score = 0;
-var step = 1;
-var p1, p2;
-var timer = null;
+let pics = document.getElementsByTagName('img');
+let checkScore = document.getElementById('score');
+let checkTime = document.getElementById('time');
+let score = 0;
+let step = 1;
+let p1, p2;
+let timer = null;
 
 for(let i=0; i<pics.length;i++){
     pics[i].src2 = "assets/img/carte" + tab[i] + ".jpg";
